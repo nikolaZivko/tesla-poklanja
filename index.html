@@ -34,21 +34,47 @@
             </nav>
         </header>
         <div class="container">
-            <div class="row">
-                <div class="col-md text-light">
-                    <h5>GRATIS TABLET ZA PRVIH 100</h5>
-                    <img src="./img/sto-da-ne-naslov.png" alt="Sto da ne?">
-                    <p class="lead">Budite medju prvih 100 kupaca Tesla Smartphone-a 9.2, jer na poklon dobijate Tesla
-                        Tablet L7.1! <span>Dva uredjaja po ceni jednog - pa STO da ne?</span></p>
-
-                    <button type="button" id="smartphone-btn">SMARTPHONE 9.2</button>
+            <div class="row d-flex align-items-center py-4">
+                <div class="col-md-6 text-light">
+                    <h5 class="hero-header">GRATIS TABLET ZA PRVIH 100</h5>
+                    <img class="img-fluid mb-5" src="./img/sto-da-ne-naslov.png" alt="Sto da ne?">
+                    <p class="mb-5">Budite medju prvih 100 kupaca Tesla Smartphone-a<br>9.2, jer na poklon dobijate
+                        Tesla
+                        Tablet L7.1!<br><strong>Dva uredjaja po ceni jednog - pa STO da ne?</strong></p>
+                    <button id="smartphone-btn" type="button">SMARTPHONE 9.2</button>
                 </div>
-                <div class="col-md">
-
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/Telefon-tablet-slider.png" alt="Telefon-tablet-slider">
                 </div>
             </div>
         </div>
     </main>
+    <section id="giveaway">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="giveaway-header">OSTAVI SVOJE PODATKE</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="row giveaway-enter">
+                    <div class="col-md">
+                        <input type="date" id="date">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" id="imei" placeholder="IMEI">
+                        <textarea id="comment" rows="8" placeholder="Komentar"></textarea>
+                    </div>
+                </div>
+                <div class="row text-center py-5">
+                    <div class="col">
+                        <button id="send">POSALJI</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
