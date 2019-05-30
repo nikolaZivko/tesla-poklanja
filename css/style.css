@@ -1,90 +1,141 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #hero {
-    background-image: url('../img/Tesla-9.2+poklon-tablet.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('../img/Tesla-9.2+poklon-tablet.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #smartphone-btn {
-    border: solid rgba(0, 0, 0, 0.3) 1px;
-    background-color: #fd8700;
-    color: #fff;
-    padding: 1rem 2rem;
-    font-weight: bold;
+  border: solid rgba(0, 0, 0, 0.3) 1px;
+  background-color: #fd8700;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
 }
 
 #giveaway {
-    background-color: #000139;
+  background-color: #000139;
 }
 
 #send {
-    background-color: #fd8700;
-    border: none;
-    color: #fff;
-    padding: 0.75rem 3rem;
-    font-weight: 300;
-}
-
-#imei {
-    background-image: url()
+  background-color: #fd8700;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 3rem;
+  font-weight: 300;
 }
 
 #date, #imei, #email, #comment {
-    width: 100%;
-    background-color: #01025e;
-    border: none;
-    margin: 1rem 1rem 1rem 0;
-    padding: 0.8rem;
-    border-radius: 2px;
-    font-weight: 300;
+  color: #fff;
+  width: 100%;
+  background-color: #01025e;
+  border: none;
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.8rem;
+  border-radius: 2px;
+  font-weight: 300;
+}
+
+#imei-img {
+  position: absolute;
+  color: #fff;
+  top: 28px;
+  right: 40px;
+}
+
+#imei-img img {
+  margin-top: -4px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+#help {
+  color: #5260f5;
+}
+/* Tooltip body */
+#imei-img #tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  top: 100%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 10px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+/* Tooltip Arrow Top */
+#imei-img #tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+#imei-img:hover #tooltiptext {
+  visibility: visible;
 }
 
 .hero-header {
-    font-weight: 900;    
+  font-weight: 900;
 }
 
 .giveaway-header {
-    text-align: center;
-    color: #fff;
-    margin: 5rem 0 1.5rem;
-    font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin: 5rem 0 1.5rem;
+  font-weight: bold;
 }
+
 .giveaway-header::after {
-    content: "";
-    position: absolute;
-    width: 6%;
-    height: 1px;
-    bottom: 0;
-    left: 47%;
-    border-bottom: 4px solid #5260f5;
+  content: "";
+  position: absolute;
+  width: 6%;
+  height: 1px;
+  bottom: 0;
+  left: 47%;
+  border-bottom: 4px solid #5260f5;
 }
 
 .giveaway-enter {
-    text-align: center;
-    margin-top: 4rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 
 ::placeholder {
-    color: #fff;
+  color: #fff;
+}
+
+::-moz-placeholder {
+  opacity: 1;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 @media screen and (max-width: 768px) {
-    .giveaway-header::after {
-        content: "";
-        position: absolute;
-        width: 12%;
-        height: 1px;
-        bottom: 0;
-        left: 44%;
-        border-bottom: 4px solid #5260f5;
-    }
+  .giveaway-header::after {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 1px;
+    bottom: 0;
+    left: 44%;
+    border-bottom: 4px solid #5260f5;
+  }
 }
