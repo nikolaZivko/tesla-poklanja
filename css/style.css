@@ -61,16 +61,15 @@ body {
 /* Tooltip body */
 #imei-img #tooltiptext {
   visibility: hidden;
-  width: 140px;
+  width: 200px;
   top: 100%;
   left: 50%;
   margin-left: -100px;
-  margin-top: 10px;
-  background-color: #fff;
-  color: black;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  padding: 0.5rem 1rem;
   position: absolute;
   z-index: 1;
 }
@@ -79,11 +78,11 @@ body {
   content: " ";
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 33%;
   margin-left: -5px;
-  border-width: 5px;
+  border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent rgba(255, 255, 255, 0.3) transparent;
 }
 
 #imei-img:hover #tooltiptext {
@@ -127,8 +126,31 @@ body {
 textarea {
   resize: none;
 }
-
+.g-recaptcha > div{
+    margin-left: auto;
+    margin-top: 55px;
+}
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #fff;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before {
+    content: "" !important;
+  }
+  input[type=date]::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: #fff !important;
+}
 @media screen and (max-width: 768px) {
+    #imei-img #tooltiptext {
+        margin-left: -150px;
+    }
+    #imei-img #tooltiptext::after {
+        left: 57%;
+    }
   .giveaway-header::after {
     content: "";
     position: absolute;

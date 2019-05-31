@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LeMdKYUAAAAACQX9rWB82ArUIgBF66ECLiyIOZY"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -58,23 +59,25 @@
             </div>
             <form action="">
                 <div class="row giveaway-enter">
-                    <div class="col-md">
-                        <input type="date" id="date">
-                        <input type="email" id="email" placeholder="Email">
+                    <div class="col-md h-100">
+                        <input type="date" id="date" placeholder="Dan i Datum" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <div class="g-recaptcha" data-sitekey="6LeydKYUAAAAALbpfxOEwXqkLkyjWy5QIZ_uYBFG"
+                            data-theme="dark"></div>
                     </div>
                     <div class="col-md">
                         <div>
-                            <span id="imei-img"><img src="./img/vectorpaint.svg" alt=""><span id="help">Pomoć</span>
-                                <span id="tooltiptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-                                    quam!</span></span>
-                            <input type="text" id="imei" placeholder="IMEI">
+                            <span id="imei-img"><img src="./img/vectorpaint.svg" alt=""><span id="help">POMOĆ</span>
+                                <span id="tooltiptext">IMEI broj ce se pojaviti na ekranu nakon sto ukucate
+                                    *#06#</span></span>
+                            <input type="text" id="imei" placeholder="IMEI" required>
                         </div>
-                        <textarea id="comment" rows="8" placeholder="Komentar"></textarea>
+                        <textarea id="comment" rows="8" placeholder="Komentar" required></textarea>
                     </div>
                 </div>
                 <div class="row text-center py-5">
                     <div class="col">
-                        <button id="send">POSALJI</button>
+                        <input id="send" type="submit" value="POSALJI">
                     </div>
                 </div>
             </form>
