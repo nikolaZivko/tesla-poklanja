@@ -129,7 +129,7 @@ textarea {
 
 .g-recaptcha > div{
     margin-left: auto;
-    margin-top: 55px;
+    margin-top: 73px;
 }
 
 input[type="date"]:before {
@@ -143,12 +143,36 @@ input[type="date"]:before {
     line-height: 52px;
     letter-spacing: -2px;
     font-weight: 900;
-    font-size: 56px;
+    font-size: 4rem;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
     margin: 2rem 0;
 }
-.optimized h3 {
+.optimized h2 {
     font-weight: 300;
+}
+.screen, .performance {
+  background-color: #1326a3;
+  color: #fff;
+  padding-top: 6rem;
+}
+.screen h1, .performance h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.screen p, .performance p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10rem;
+  padding: 0 1rem;
+}
+.performance {
+  background-color:  #00052f;
+  padding-bottom: 8rem;
+}
+.performance h4 {
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 #daring {
     color: rgb(57, 163, 255);
@@ -185,12 +209,15 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-bottom: 1.5rem;
 }
 .specs:nth-child(1) {
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 .specs:nth-child(2) {
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 @media screen and (max-width: 768px) {
+  .g-recaptcha > div{
+    margin: 0 auto;
+}
     #imei-img #tooltiptext {
         margin-left: -150px;
     }
